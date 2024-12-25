@@ -1,0 +1,233 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("anime-moon-landscape.jpg");
+    background-size: cover; /* First image covers, second and third are smaller */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Makes the background stay fixed during scrolling */
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+}
+
+.header .logo {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Introduction Section */
+.intro {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Search Form */
+.search-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.search-container form {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #e07a00;
+}
+
+/* Rating Section */
+.ratings {
+    text-align: center;
+    margin-top: 30px;
+}
+/* Flexbox styling for rating items */
+.rating-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Image on the left */
+.rating-img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Text content in the middle */
+.rating-content {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+/* Stars right beside text */
+.stars {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Basic styling for stars */
+.stars label {
+    font-size: 1.5em;
+    color: gold;
+    cursor: pointer;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+
+.rating-item {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.rating-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.rating-item p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.stars {
+    display: inline-block;
+}
+
+.stars label {
+    font-size: 40px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.stars input[type="radio"]:checked ~ label {
+    color: #ffcc00; /* Gold color when selected */
+}
+
+.stars input[type="radio"]:checked + label {
+    color: #ffcc00; /* Highlight checked star */
+}
+
+.stars label:hover {
+    color: #ffcc00;
+}
+/* Add this to your styles.css */
+.top-airing {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.show-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.show-item {
+    background-color: rgba(0, 0, 0, 0.5); /* White with slight transparency */
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.show-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.show-item img {
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+}
+
+.show-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.show-item p {
+    font-size: 1em;
+    padding: 0 10px 10px;
+}
+
+.show-item a {
+    color: #007BFF;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.show-item a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
