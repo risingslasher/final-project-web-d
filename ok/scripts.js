@@ -1,18 +1,18 @@
-function searchItems() {
-    // Get the search input and convert it to lowercase for case-insensitive matching
-    const query = document.getElementById('search-bar').value.toLowerCase();
-    
-    // Get all the list items (reviews or posts)
-    const items = document.querySelectorAll('.item');
-    
-    // Loop through all items and hide those that don't match the query
-    items.forEach(item => {
-        const text = item.textContent.toLowerCase();
-        
-        if (text.includes(query)) {
-            item.style.display = '';  // Show item
+// Search Functionality
+function searchReviews() {
+    // Get the search query and the list of review items
+    const query = document.getElementById("search-bar").value.toLowerCase();
+    const reviews = document.getElementsByClassName("review-item");
+
+    // Loop through all review items
+    for (let i = 0; i < reviews.length; i++) {
+        let review = reviews[i].textContent.toLowerCase();
+
+        // If the review matches the search query, show it; otherwise, hide it
+        if (review.includes(query)) {
+            reviews[i].style.display = "block";
         } else {
-            item.style.display = 'none';  // Hide item
+            reviews[i].style.display = "none";
         }
-    });
+    }
 }
