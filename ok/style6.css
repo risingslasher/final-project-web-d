@@ -1,0 +1,131 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-image: url("rengok.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Makes the background stay fixed during scrolling */
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.intro h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    max-width: 150px;
+}
+
+/* Search Bar Container */
+.search-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#search-bar {
+    padding: 10px;
+    width: 70%;
+    max-width: 600px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #e50914;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-container button:hover {
+    background-color: #d40e11;
+}
+
+/* Reviews Section */
+.ratings {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ratings h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+a {
+    color: #e34525; /* Blue color */
+    text-decoration: none; /* Removes underline by default */
+}
+
+#review-list {
+    list-style-type: none;
+}
+
+.review-item {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+.review-item:hover {
+    background-color:#e50914;
+    
+    border: 1px solid #f58a18;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e50914;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
